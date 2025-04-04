@@ -4,15 +4,12 @@ dependencies:
     repository: https://github.com/okteto-community/hello-world-nochart
     branch: ${HELLO_WORLD_BRANCH:-main}
     wait: true
-    variables:
-      DEPLOY: "false"
 
   hola-mundo-nochart:
     repository: https://github.com/okteto-community/hola-mundo-nochart
     branch: ${HOLA_MUNDO_BRANCH:-main}
     wait: true
-    variables:
-      DEPLOY: "false"
+
 
 deploy:
   - name: Deploy Application
