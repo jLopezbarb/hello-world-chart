@@ -1,18 +1,15 @@
 # we add the repository as a dependency to have it build first
 dependencies:
   hello-world-nochart:
-    repository: https://github.com/okteto-community/hello-world-nochart
+    repository: https://github.com/jlopezbarb/hello-world-nochart
     branch: ${HELLO_WORLD_BRANCH:-main}
     wait: true
-    variables:
-      DEPLOY: "false"
 
   hola-mundo-nochart:
-    repository: https://github.com/okteto-community/hola-mundo-nochart
+    repository: https://github.com/jlopezbarb/hola-mundo-nochart
     branch: ${HOLA_MUNDO_BRANCH:-main}
     wait: true
-    variables:
-      DEPLOY: "false"
+
 
 deploy:
   - name: Deploy Application
