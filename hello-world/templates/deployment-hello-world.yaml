@@ -34,7 +34,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.helloworld.image.repository }}:{{ .Values.helloworld.image.tag }}"
+          image: "{{ .Values.helloworld.image.repository }}"
           imagePullPolicy: {{ .Values.helloworld.image.pullPolicy }}
           ports:
             - name: http

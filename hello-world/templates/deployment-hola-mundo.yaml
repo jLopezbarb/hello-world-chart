@@ -34,7 +34,7 @@ spec:
         - name: {{ .Chart.Name }}
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.holamundo.image.repository }}:{{ .Values.holamundo.image.tag }}"
+          image: "{{ .Values.holamundo.image.repository }}"
           imagePullPolicy: {{ .Values.holamundo.image.pullPolicy }}
           ports:
             - name: http
