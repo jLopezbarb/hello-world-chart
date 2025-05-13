@@ -8,15 +8,11 @@ helloworld:
   image:
     repository: bitnami/nginx
     pullPolicy: IfNotPresent
-    # Overrides the image tag whose default is the chart appVersion.
-    tag: latest
 
 holamundo:
   image:
     repository: bitnami/nginx
     pullPolicy: IfNotPresent
-    # Overrides the image tag whose default is the chart appVersion.
-    tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
