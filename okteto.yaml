@@ -16,5 +16,5 @@ deploy:
     command: |
       helm upgrade --install hello-world ./hello-world \
         --set helloworld.image=${OKTETO_DEPENDENCY_HELLO_WORLD_NOCHART_BUILD_HELLO_WORLD_IMAGE} \
-        --set holamundo.image.repository=${OKTETO_DEPENDENCY_HOLA_MUNDO_NOCHART_BUILD_HOLA_MUNDO_IMAGE \
+        --set holamundo.image=${OKTETO_DEPENDENCY_HOLA_MUNDO_NOCHART_BUILD_HOLA_MUNDO_IMAGE} \
         --values values-okteto.yaml
